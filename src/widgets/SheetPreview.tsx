@@ -32,7 +32,7 @@ const ReactGoogleSpreadsheetPreview: React.FC<ReactGoogleSpreadsheetPreviewProps
     >
       <iframe
         src={`https://docs.google.com/spreadsheets/d/e/${spreadsheetId}/pubhtml?gid=0&single=true&widget=true&headers=false`}
-        frameBorder="0"
+       
         width={width * 2}
         height={height * 2}
         style={{

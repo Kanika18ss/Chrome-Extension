@@ -1,7 +1,7 @@
 import "../css/googleSlide.css";
 import React from "react";
 import ReactGoogleSlides from "react-google-slides";
-import ReactGoogleSpreadsheetPreview from "./Preview";
+import ReactGoogleSpreadsheetPreview from "./SheetPreview";
 
 const GoogleSlideAndSpreadsheet: React.FC = () => {
   const handleSpreadsheetClick = () => {

@@ -1,4 +1,4 @@
-// import "../css/googleMeet.css";
+import "../css/googleSlide.css";
 import React from "react";
 
 const GoogleMeet: React.FC = () => {
@@ -7,7 +7,7 @@ const GoogleMeet: React.FC = () => {
   };
 
   return (
-    <div className="googleMeet">
+    <div className="googleMeet clickableText" onClick={handleMeetClick}>
       <div className="imageContainer">
         <img
           src="https://cdn.classpoint.io/wp-content/uploads/blogThumbnail_gmet.jpg" // Replace with the actual path to your image
