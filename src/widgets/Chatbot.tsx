@@ -10,7 +10,7 @@ const Chatbot: React.FC = () => {
     <Card title="Chatbot" onClick={handleBotClick}>
       <div className="imageContainer">
         <img
-          src="https://cdn.thewire.in/wp-content/uploads/2023/02/01093738/ChatGPT-1200x600.jpg" // Replace with the actual path to your image
+          src="https://imageio.forbes.com/specials-images/imageserve/6467052ad97b80cf1341e295/A-Short-History-Of-ChatGPT--How-We-Got-To-Where-We-Are-Today/960x0.jpg?format=jpg&width=1440" // Replace with the actual path to your image
           alt="Chatbot"
           width={300}
           height={200}

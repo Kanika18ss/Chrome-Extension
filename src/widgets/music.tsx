@@ -11,7 +11,7 @@ const Music: React.FC = () => {
     <Card title="Music" onClick={handleFormClick}>
       <div className="imageContainer">
         <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Gaana_%28music_streaming_service%29_logo.png/1200px-Gaana_%28music_streaming_service%29_logo.png" 
+          src="https://media.wired.com/photos/6441cc2e6b2fffe52ad78d24/master/w_1600,c_limit/The-Sludgification-Of-Music-Business-503493283.jpg" 
           alt="Music"
           width={300}
           height={200}

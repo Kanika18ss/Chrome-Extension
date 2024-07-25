@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import Timer from '../widgets/Timer';
 import '../css/slider.css';
+import AnnouncementWidget from '../widgets/Anouncement';
 
 const SidebarContainer = styled.div`
   width: 400px;
@@ -24,7 +25,10 @@ const DateTimeDisplay = styled.div`
   font-size: 2em;
   font-weight: bold;
   color: white;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 `;
 
 const Sidebar: React.FC = () => {
@@ -38,19 +42,35 @@ const Sidebar: React.FC = () => {
     return () => clearInterval(intervalId);
   }, []);
 
+  const formattedDate = dateTime.toLocaleDateString('en-GB', {
+    weekday: 'long',
+    day: 'numeric',
+    month: 'long',
+    year: 'numeric',
+  });
+
+  const formattedTime = dateTime.toLocaleTimeString('en-GB', {
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+  });
+
   return (
     <SidebarContainer>
       <DateTimeDisplay>
-        {dateTime.toLocaleDateString()} {dateTime.toLocaleTimeString()}
+        <div>{formattedDate}</div>
+        <div style={{ marginTop: '10px' }}>{formattedTime}</div>
       </DateTimeDisplay>
+      <div>
+        <AnnouncementWidget/>
+      </div>
       <div className='Apps'>
         <div className="main-container center">
           <div className="circle-container center">
             <Timer/>
-          </div>        
+          </div>
         </div>
       </div>
-      
       <SidebarFooter>© 2025 passouts WE Jiitians</SidebarFooter>
     </SidebarContainer>
   );

@@ -9,9 +9,13 @@ import Chatbot from "./widgets/Chatbot";
 import GoogleCalendar from "./widgets/GoogleCalendar";
 import GoogleKeep from "./widgets/GoogleKeep";
 import Sidebar from "./components/sidebar";
-import Card from "./components/Card"; // Import the Card component
+
 import '../src/css/slider.css';
 import '../src/css/app.css';
+import IssueTracker from './widgets/IssueTracker';
+import HealthTracker from './widgets/HealthTracker';
+import Checklist from './widgets/Growth';
+
 
 const App: React.FC = () => {
   return (
@@ -19,16 +23,21 @@ const App: React.FC = () => {
       <Sidebar/>
       <div className="main-content">
         <div className="card-container">
-          <Card><GoogleSlide/></Card>
-          <Card><GoogleSpreadSheet/></Card>
+          <GoogleSlide/>
+          <GoogleSpreadSheet/>
           <GoogleMeet/>
+          <IssueTracker/>
+          <Checklist/>
           <GoogleForm/>
           <GoogleCalendar/>
           <GoogleKeep/>
           <Music/>
+          <HealthTracker/>
           <Chatbot/>
+          
         </div>
       </div>
+      
     </div>
   );
 }

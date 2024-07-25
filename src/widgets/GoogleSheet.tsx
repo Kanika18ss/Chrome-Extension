@@ -1,9 +1,9 @@
 import "../css/googleSlide.css";
 import React from "react";
+import Card from "../components/card"; // Adjust the import path as needed
+import ReactGoogleSpreadsheetPreview from "./SheetPreview"; // Adjust the import path as needed
 
-import ReactGoogleSpreadsheetPreview from "./SheetPreview";
-
-const GoogleSlideAndSpreadsheet: React.FC = () => {
+const GoogleSpreadsheet: React.FC = () => {
   const handleSpreadsheetClick = () => {
     window.open(
       "https://docs.google.com/spreadsheets/u/0/",
@@ -12,8 +12,8 @@ const GoogleSlideAndSpreadsheet: React.FC = () => {
   };
 
   return (
-      
-      <div className="googleSpreadsheet " onClick={handleSpreadsheetClick}>
+    <Card title="Google Spreadsheet" onClick={handleSpreadsheetClick}>
+      <div className="imageContainer">
         <ReactGoogleSpreadsheetPreview
           width={300}
           height={200}
@@ -21,8 +21,8 @@ const GoogleSlideAndSpreadsheet: React.FC = () => {
           spreadsheetId="2PACX-1vRFLA9oqWXH-y6LY1AdUheazpZMlndM1AbHQqTOVch5eFvTQrqdXGDllE8D0Unl1hSIba1MFD3ThQYR"
         />
       </div>
-    
+    </Card>
   );
 };
 
-export default GoogleSlideAndSpreadsheet;
+export default GoogleSpreadsheet;

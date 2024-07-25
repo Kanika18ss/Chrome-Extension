@@ -7,7 +7,7 @@
     background-color: #f2f5f7;
     flex: 2;
     width:340px;
-    height:240px; /* Adjust to ensure 3 cards per row with margin */
+    height:270px; /* Adjust to ensure 3 cards per row with margin */
     box-sizing: border-box;
     cursor: pointer;
     overflow: hidden;
@@ -22,10 +22,12 @@
   
   .card-title {
     margin: 0;
-    font-size: 16px;
+    font-size: 22px; /* Adjust font size as needed */
     color: #333;
+    font-weight: bold; /* Make sure text is visible */
+    font-family: 'Merriweather', serif;
   }
-  
+
   .imageContainer img {
     display: block;
     max-width: 100%;
