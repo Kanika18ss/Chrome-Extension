@@ -59,7 +59,7 @@ const Sidebar: React.FC = () => {
     <SidebarContainer>
       <DateTimeDisplay>
         <div>{formattedDate}</div>
-        <div style={{ marginTop: '10px' }}>{formattedTime}</div>
+        <div style={{ marginTop: '10px' , fontSize: '2em', color:'red' }}>{formattedTime}</div>
       </DateTimeDisplay>
       <div>
         <AnnouncementWidget/>
