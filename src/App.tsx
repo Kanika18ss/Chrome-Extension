@@ -1,7 +1,6 @@
-import React from "react";
+import React from 'react';
 import GoogleSlide from "./widgets/GoogleSlide";
 import Timer from "./widgets/Timer";
-import '../src/css/slider.css'
 import GoogleSpreadSheet from "./widgets/GoogleSheet";
 import GoogleMeet from "./widgets/GoogleMeet";
 import GoogleForm from "./widgets/GoogleForm";
@@ -10,35 +9,28 @@ import Chatbot from "./widgets/Chatbot";
 import GoogleCalendar from "./widgets/GoogleCalendar";
 import GoogleKeep from "./widgets/GoogleKeep";
 import Sidebar from "./components/sidebar";
-
-
+import Card from "./components/Card"; // Import the Card component
+import '../src/css/slider.css';
+import '../src/css/app.css';
 
 const App: React.FC = () => {
   return (
-    <div>
+    <div className="Apps">
       <Sidebar/>
-    <div className="App">
-      
-      <GoogleSlide/>
-      <GoogleSpreadSheet/>
-      <GoogleMeet/>
-      <GoogleForm/>
-      <GoogleCalendar/>
-      <GoogleKeep/>
-      <Music/>
-      <Chatbot/>
-     
-      <div className="main-container center">
-        <div className="circle-container center">
-          <Timer/>
-        </div>        
+      <div className="main-content">
+        <div className="card-container">
+          <Card><GoogleSlide/></Card>
+          <Card><GoogleSpreadSheet/></Card>
+          <GoogleMeet/>
+          <GoogleForm/>
+          <GoogleCalendar/>
+          <GoogleKeep/>
+          <Music/>
+          <Chatbot/>
+        </div>
       </div>
-  
-    </div>
     </div>
   );
 }
 
 export default App;
-
-

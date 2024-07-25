@@ -1,5 +1,6 @@
 import "../css/googleSlide.css";
 import React from "react";
+import Card from "../components/card"; // Adjust the import path as needed
 
 const GoogleMeet: React.FC = () => {
   const handleMeetClick = () => {
@@ -7,19 +8,16 @@ const GoogleMeet: React.FC = () => {
   };
 
   return (
-    <div className="googleMeet clickableText" onClick={handleMeetClick}>
+    <Card title="Google Meet" onClick={handleMeetClick}>
       <div className="imageContainer">
         <img
           src="https://cdn.classpoint.io/wp-content/uploads/blogThumbnail_gmet.jpg" // Replace with the actual path to your image
           alt="Google Meet Preview"
-          width={450}
-          height={300}
+          width={300}
+          height={200}
         />
       </div>
-      <div className="clickableText" onClick={handleMeetClick}>
-        Google Meet
-      </div>
-    </div>
+    </Card>
   );
 };
 

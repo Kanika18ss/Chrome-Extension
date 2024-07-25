@@ -6,8 +6,8 @@ const GoogleSlide: React.FC = () => {
   return (
     <div className="gooleSlide">
       <ReactGoogleSlides
-        width={450}
-        height={300}
+        width={300}
+        height={200}
         slidesLink="https://docs.google.com/presentation/d/1F9UsXXpLmlR0MfCzzMHmlPsv73-WH3Bh"
         slideDuration={5}
         showControls

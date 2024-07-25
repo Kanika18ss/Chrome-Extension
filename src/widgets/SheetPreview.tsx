@@ -22,7 +22,7 @@ const ReactGoogleSpreadsheetPreview: React.FC<ReactGoogleSpreadsheetPreviewProps
       style={{
         width: `${width}px`,
         height: `${height}px`,
-        position: "relative",
+        
         overflow: "hidden",
         cursor: "pointer",
         border: "1px solid #ccc",

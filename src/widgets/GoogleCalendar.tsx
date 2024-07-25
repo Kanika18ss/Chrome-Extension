@@ -1,4 +1,5 @@
 import React from "react";
+import Card from "../components/card"; // Adjust the import path as needed
 
 const GoogleCalendar: React.FC = () => {
   const handleCalendarClick = () => {
@@ -6,19 +7,16 @@ const GoogleCalendar: React.FC = () => {
   };
 
   return (
-    <div className="googleCalendar">
+    <Card title="Google Calendar" onClick={handleCalendarClick}>
       <div className="imageContainer">
         <img
           src="https://www.dianamarinova.com/wp-content/uploads/2013/09/Google-Calendar-week-view.png" 
           alt="Google Calendar Preview"
-          width={450}
-          height={300}
+          width={300}
+          height={200}
         />
       </div>
-      <div className="clickableText" onClick={handleCalendarClick}>
-        Google Calendar
-      </div>
-    </div>
+    </Card>
   );
 };
 

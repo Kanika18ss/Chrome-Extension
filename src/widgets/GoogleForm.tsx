@@ -1,5 +1,5 @@
-import "../css/googleSlide.css";
 import React from "react";
+import Card from "../components/card"; // Adjust import path as needed
 
 const GoogleForm: React.FC = () => {
   const handleFormClick = () => {
@@ -7,19 +7,16 @@ const GoogleForm: React.FC = () => {
   };
 
   return (
-    <div className="googleForm">
+    <Card title="Google Form" onClick={handleFormClick}>
       <div className="imageContainer">
         <img
           src="https://d2e0fzu2c9cj3i.cloudfront.net/wp-content/uploads/2020/04/image-1024x504.png" // Replace with the actual path to your image
           alt="Google Form Preview"
-          width={450}
-          height={300}
+          width={300}
+          height={200}
         />
       </div>
-      <div className="clickableText" onClick={handleFormClick}>
-        Google Form
-      </div>
-    </div>
+    </Card>
   );
 };
 

@@ -1,14 +1,17 @@
 .googleSlide {
     font-family: sans-serif;
     text-align: center;
-    height:300px;
-    width:450px;
+    height:200px;
+    width:300px;
   }
   .googleSpreadsheet {
+    font-family: sans-serif;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    height:200px;
+    width:300px;
   }
   .googleForm {
     font-family: sans-serif;
@@ -16,8 +19,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height:300px;
-    width:450px;
+    height:200px;
+    width:300px;
   }
   
 
