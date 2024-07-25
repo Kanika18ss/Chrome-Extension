@@ -54,6 +54,9 @@ const App: React.FC = () => {
     <div className="Apps">
       <Sidebar />
       <div className="main-content">
+      <header className="header">
+        <h1>Explore Widgets</h1>
+      </header>
         <Settings settings={widgetSettings} onToggle={handleToggle} isOpen={isSettingsOpen} onSettingsToggle={handleSettingsToggle} />
         <div className="card-container">
           {widgetSettings.GoogleSlide && <GoogleSlide />}
