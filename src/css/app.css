@@ -10,20 +10,23 @@
   }
   
   .main-content {
-   
+   background-color: #333;
    /* Adjust according to Sidebar width */
     padding: 16px;
     flex: 1;
   }
 .header{
+  padding: 5px;
+  margin-left: 41%;
+  margin-bottom: 10px;
   
-  padding: 20px;
 }
   .header h1 {
-    font-family:'Times New Roman', Times, serif;
-    color: brown;
-    font-size: 2.5rem;
-    margin-left: 41%; /* You can adjust this value or remove it if not needed */
+     
+    margin-right: 25%; 
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
   }
   .card-container {
     margin-left:470px;

@@ -14,7 +14,7 @@ const GoogleSlide: React.FC = () => {
       <ReactGoogleSlides
         width={300}
         height={200}
-        slidesLink="https://docs.google.com/presentation/d/1F9UsXXpLmlR0MfCzzMHmlPsv73-WH3Bh"
+        slidesLink="https://docs.google.com/presentation/d/1ywsID7jPZh5RU_xla6LcYR6KSllcNBpM"
         slideDuration={5}
         showControls
         loop
