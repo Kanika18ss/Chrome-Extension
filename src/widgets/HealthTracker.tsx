@@ -67,7 +67,7 @@ const HealthTracker: React.FC = () => {
 
   return (
     <div>
-    <Card title="Health Tracker" onClick={() => {}}>
+    <Card title="Sreps Tracker" onClick={() => {}}>
       <form onSubmit={isEditing ? (e) => { e.preventDefault(); handleSaveEdit(); } : handleAddRecord}>
         <div>
           <label>Steps:</label>
